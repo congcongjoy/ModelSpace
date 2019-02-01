@@ -15,4 +15,4 @@ date: 2019-02-01
 
 ![pp](gopher.png)
 
-![tt](https://t2.wnacg.download/data/t/0689/37/15479719733474.jpg)
+![tt](https://raw.githubusercontent.com/CMU-Perceptual-Computing-Lab/openpose/master/.github/Logo_main_black.png)
