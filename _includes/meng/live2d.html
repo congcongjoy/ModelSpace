@@ -53,9 +53,9 @@ if (appVersion.indexOf('Mobile') > 0){
     var isMobile = true;
 }
 if(!isMobile){
-    loadlive2d("live2dcanvas", '{{live2d.model  | prepend: site.baseurl }}');
+    loadlive2d("live2dcanvas", '{{live2d.model  | prepend: site.url }}');
 }
 {% else %}
-loadlive2d("live2dcanvas", '{{live2d.model  | prepend: site.baseurl }}');
+loadlive2d("live2dcanvas", '{{live2d.model  | prepend: site.url }}');
 {% endif %}
 </script>

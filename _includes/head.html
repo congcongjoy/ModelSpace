@@ -22,18 +22,18 @@
     <link rel="apple-touch-icon" href="{{ site.data.site.head.apple_touch_icon }}">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="manifest" href="{{ "/manifest.json" | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url | prepend: site.url }}">
+    <link rel="manifest" href="{{ "/manifest.json" | prepend: site.url }}">
 
     <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/mdui/0.3.0/js/mdui.min.js"></script>
-    <script src="{{ "/assets/js/History.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/assets/js/History.js" | prepend: site.url }}"></script>
 
     <link rel="preload" href="https://cdn.bootcss.com/mdui/0.3.0/css/mdui.min.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="{{ "/assets/css/global.css" | prepend: site.baseurl }}" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="{{ "/assets/css/global.css" | prepend: site.url }}" as="style" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdn.bootcss.com/mdui/0.3.0/css/mdui.min.css"></noscript>
-    <noscript><link rel="stylesheet" href="{{ "/assets/css/global.css" | prepend: site.baseurl }}"></noscript>
+    <noscript><link rel="stylesheet" href="{{ "/assets/css/global.css" | prepend: site.url }}"></noscript>
 
     {% include component/nprogress.html %}
     <script>

@@ -51,14 +51,14 @@
                 <div class="mdui-card-media mdui-ripple k-post-media lazy" data-original="{{catedata.img}}" style="background-image:url()">
                     <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
                     <div class="mdui-card-primary">
-                        <div class="mdui-card-primary-title"><a class="mdui-text-color-white-text" href="{{ "/category" | prepend: site.baseurl }}/{{category|first}}.html">{{category|first}} <span class="mdui-text-color-blue">({{category | last | size}})</span></a></div>
+                        <div class="mdui-card-primary-title"><a class="mdui-text-color-white-text" href="{{ "/category" | prepend: site.url }}/{{category|first}}.html">{{category|first}} <span class="mdui-text-color-blue">({{category | last | size}})</span></a></div>
                     </div>
                     </div>
                 </div>
                 {% assign havedata = true %}
                 {% else %}
                 <div class="mdui-card-media mdui-ripple k-post-media mdui-valign k-noimg">
-                    <h1><a href="{{ "/category" | prepend: site.baseurl }}/{{category|first}}.html">{{category|first}} <span class="mdui-text-color-blue">({{category | last | size}})</span></a></h3>
+                    <h1><a href="{{ "/category" | prepend: site.url }}/{{category|first}}.html">{{category|first}} <span class="mdui-text-color-blue">({{category | last | size}})</span></a></h3>
                 </div>
                 {% assign havedata = true %}
                 {% endif %}
@@ -66,7 +66,7 @@
         {% endfor %}
         {% if havedata == false %}
             <div class="mdui-card-media mdui-ripple k-post-media mdui-valign k-noimg">
-                <h1><a href="{{ "/category" | prepend: site.baseurl }}/{{category|first}}.html">{{category|first}} <span class="mdui-text-color-blue">({{category | last | size}})</span></a></h3>
+                <h1><a href="{{ "/category" | prepend: site.url }}/{{category|first}}.html">{{category|first}} <span class="mdui-text-color-blue">({{category | last | size}})</span></a></h3>
             </div>
         {% endif %}
     </div>
