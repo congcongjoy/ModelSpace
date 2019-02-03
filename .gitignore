@@ -5,3 +5,6 @@ _site
 Gemfile.lock
 node_modules
 .jekyll-metadata
+assets/live2d
+package-lock.json
+.vscode

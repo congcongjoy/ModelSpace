@@ -37,6 +37,7 @@ MDUI 是一套用于开发 Material Design 网页的前端框架。
 * PWA
 * 多样性 SNS
 * 在线编辑器[demo](https://blog.kejun.space/pages/editor.html)
+* 快速插入提示，如下：
 
 ## 食用方法
 
