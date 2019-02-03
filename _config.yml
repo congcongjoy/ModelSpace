@@ -1,3 +1,27 @@
-name: Hank Quinlan, Horrible Cop
+title: "Jekyll-Theme-MDUI"
+description: "A Jekyll theme based on MDUI"
+url: 
+baseurl: ""
+author: "KeJun"
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+
+# Build settings
+theme: jekyll-theme-mdui
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-feed
+
+exclude:
+  - package.json
+  - node_modules
+  - gulpfile.js
+  - Gemfile
+  - Gemfile.lock
+  - jekyll-theme-mdui.gemspec
+  - LICENSE.txt
+  - README.md
+  - vendor
